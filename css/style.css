@@ -1,0 +1,1207 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #000;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 500;
+}
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+
+a{
+	color: #000;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.3em;
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 500;
+	color: #000;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1200px;
+}
+.flex-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+@font-face {
+    font-family: 'caustenbold';
+    src: url('../fonts/causten-bold-webfont.woff2') format('woff2'),
+         url('../fonts/causten-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'caustenregular';
+    src: url('../fonts/causten-regular-webfont.woff2') format('woff2'),
+         url('../fonts/causten-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'caustenmedium';
+    src: url('../fonts/causten-medium-webfont.woff2') format('woff2'),
+         url('../fonts/causten-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Core Sans C 15';
+    src: url('../fonts/CoreSansC-15Thin.eot');
+    src: local('Core Sans C 15 Thin'), local('CoreSansC-15Thin'),
+        url('../fonts/CoreSansC-15Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-15Thin.woff2') format('woff2'),
+        url('../fonts/CoreSansC-15Thin.woff') format('woff'),
+        url('../fonts/CoreSansC-15Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Core Sans C 65';
+    src: url('../fonts/CoreSansC-65BoldIt.eot');
+    src: local('Core Sans C 65 Bold Italic'), local('CoreSansC-65BoldIt'),
+        url('CoreSansC-65BoldIt.eot?#iefix') format('embedded-opentype'),
+        url('CoreSansC-65BoldIt.woff2') format('woff2'),
+        url('CoreSansC-65BoldIt.woff') format('woff'),
+        url('CoreSansC-65BoldIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Core Sans C 25';
+    src: url('../fonts/CoreSansC-25ExtraLightIt.eot');
+    src: local('Core Sans C 25 ExtraLight Italic'), local('CoreSansC-25ExtraLightIt'),
+        url('../fonts/CoreSansC-25ExtraLightIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-25ExtraLightIt.woff2') format('woff2'),
+        url('../fonts/CoreSansC-25ExtraLightIt.woff') format('woff'),
+        url('../fonts/CoreSansC-25ExtraLightIt.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Core Sans C 65';
+    src: url('../fonts/CoreSansC-65Bold.eot');
+    src: local('Core Sans C 65 Bold'), local('CoreSansC-65Bold'),
+        url('../fonts/CoreSansC-65Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-65Bold.woff2') format('woff2'),
+        url('../fonts/CoreSansC-65Bold.woff') format('woff'),
+        url('../fonts/CoreSansC-65Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Core Sans C 35';
+    src: url('../fonts/CoreSansC-35LightIt.eot');
+    src: local('Core Sans C 35 Light Italic'), local('CoreSansC-35LightIt'),
+        url('../fonts/CoreSansC-35LightIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-35LightIt.woff2') format('woff2'),
+        url('../fonts/CoreSansC-35LightIt.woff') format('woff'),
+        url('../fonts/CoreSansC-35LightIt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Core Sans C 55';
+    src: url('../fonts/CoreSansC-55Medium.eot');
+    src: local('Core Sans C 55 Medium'), local('CoreSansC-55Medium'),
+        url('../fonts/CoreSansC-55Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-55Medium.woff2') format('woff2'),
+        url('../fonts/CoreSansC-55Medium.woff') format('woff'),
+        url('../fonts/CoreSansC-55Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Core Sans C 85';
+    src: url('../fonts/CoreSansC-85HeavyIt.eot');
+    src: local('Core Sans C 85 Heavy Italic'), local('CoreSansC-85HeavyIt'),
+        url('../fonts/CoreSansC-85HeavyIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-85HeavyIt.woff2') format('woff2'),
+        url('../fonts/CoreSansC-85HeavyIt.woff') format('woff'),
+        url('../fonts/CoreSansC-85HeavyIt.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Core Sans C 15';
+    src: url('../fonts/CoreSansC-15ThinIt.eot');
+    src: local('Core Sans C 15 Thin Italic'), local('CoreSansC-15ThinIt'),
+        url('../fonts/CoreSansC-15ThinIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-15ThinIt.woff2') format('woff2'),
+        url('../fonts/CoreSansC-15ThinIt.woff') format('woff'),
+        url('../fonts/CoreSansC-15ThinIt.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Core Sans C 45';
+    src: url('../fonts/CoreSansC-45RegularIt.eot');
+    src: local('Core Sans C 45 Regular Italic'), local('CoreSansC-45RegularIt'),
+        url('../fonts/CoreSansC-45RegularIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-45RegularIt.woff2') format('woff2'),
+        url('../fonts/CoreSansC-45RegularIt.woff') format('woff'),
+        url('../fonts/CoreSansC-45RegularIt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Core Sans C 25';
+    src: url('../fonts/CoreSansC-25ExtraLight.eot');
+    src: local('Core Sans C 25 ExtraLight'), local('CoreSansC-25ExtraLight'),
+        url('../fonts/CoreSansC-25ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-25ExtraLight.woff2') format('woff2'),
+        url('../fonts/CoreSansC-25ExtraLight.woff') format('woff'),
+        url('../fonts/CoreSansC-25ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Core Sans C 75';
+    src: url('../fonts/CoreSansC-75ExtraBoldIt.eot');
+    src: local('Core Sans C 75 ExtraBold Italic'), local('CoreSansC-75ExtraBoldIt'),
+        url('../fonts/CoreSansC-75ExtraBoldIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-75ExtraBoldIt.woff2') format('woff2'),
+        url('../fonts/CoreSansC-75ExtraBoldIt.woff') format('woff'),
+        url('../fonts/CoreSansC-75ExtraBoldIt.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Core Sans C 55';
+    src: url('../fonts/CoreSansC-55MediumIt.eot');
+    src: local('Core Sans C 55 Medium Italic'), local('CoreSansC-55MediumIt'),
+        url('../fonts/CoreSansC-55MediumIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-55MediumIt.woff2') format('woff2'),
+        url('../fonts/CoreSansC-55MediumIt.woff') format('woff'),
+        url('../fonts/CoreSansC-55MediumIt.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Core Sans C 95';
+    src: url('../fonts/CoreSansC-95Black.eot');
+    src: local('Core Sans C 95 Black'), local('CoreSansC-95Black'),
+        url('../fonts/CoreSansC-95Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-95Black.woff2') format('woff2'),
+        url('../fonts/CoreSansC-95Black.woff') format('woff'),
+        url('../fonts/CoreSansC-95Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Core Sans C 75';
+    src: url('../fonts/CoreSansC-75ExtraBold.eot');
+    src: local('Core Sans C 75 ExtraBold'), local('CoreSansC-75ExtraBold'),
+        url('../fonts/CoreSansC-75ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-75ExtraBold.woff2') format('woff2'),
+        url('../fonts/CoreSansC-75ExtraBold.woff') format('woff'),
+        url('../fonts/CoreSansC-75ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Core Sans C 95';
+    src: url('../fonts/CoreSansC-95BlackIt.eot');
+    src: local('Core Sans C 95 Black Italic'), local('CoreSansC-95BlackIt'),
+        url('../fonts/CoreSansC-95BlackIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-95BlackIt.woff2') format('woff2'),
+        url('../fonts/CoreSansC-95BlackIt.woff') format('woff'),
+        url('../fonts/CoreSansC-95BlackIt.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Core Sans C 35';
+    src: url('../fonts/CoreSansC-35Light.eot');
+    src: local('Core Sans C 35 Light'), local('CoreSansC-35Light'),
+        url('../fonts/CoreSansC-35Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-35Light.woff2') format('woff2'),
+        url('../fonts/CoreSansC-35Light.woff') format('woff'),
+        url('../fonts/CoreSansC-35Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Core Sans C 85';
+    src: url('../fonts/CoreSansC-85Heavy.eot');
+    src: local('Core Sans C 85 Heavy'), local('CoreSansC-85Heavy'),
+        url('../fonts/CoreSansC-85Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-85Heavy.woff2') format('woff2'),
+        url('../fonts/CoreSansC-85Heavy.woff') format('woff'),
+        url('../fonts/CoreSansC-85Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Core Sans C 45';
+    src: url('../fonts/CoreSansC-45Regular.eot');
+    src: local('Core Sans C 45 Regular'), local('CoreSansC-45Regular'),
+        url('../fonts/CoreSansC-45Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-45Regular.woff2') format('woff2'),
+        url('../fonts/CoreSansC-45Regular.woff') format('woff'),
+        url('../fonts/CoreSansC-45Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Light.woff2') format('woff2'),
+        url('../fonts/Montserrat-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Black.woff2') format('woff2'),
+        url('../fonts/Montserrat-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+::placeholder {
+  color: #9B9B9B;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #9B9B9B;
+}
+
+::-ms-input-placeholder {
+  color: #9B9B9B;
+}
+
+
+
+header{
+	display: flex;
+	padding: 26px 80px;
+	justify-content: space-between;
+	align-items: center;
+}
+header h1.left img{
+	margin-left: 39px;
+}
+header nav.middle1 ul{
+	margin-left: 0px;
+	display: flex;
+}
+header nav.middle1 ul li{
+	justify-content: space-between;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+header nav.middle1 ul li a{
+	font-family: "caustenmedium";
+	font-weight: 500;
+	font-size: 22px;
+	color: #807D7E;
+}
+header nav.middle1 ul li a:hover{
+	font-family: "caustenmedium";
+    color: #3C4242;
+	font-weight: 700;
+}
+header nav.middle2{
+    display: flex;
+}
+header nav.middle2 form{
+    display: flex;
+}
+header nav.middle2 form img{
+	position: relative;
+	left: 30px;
+}
+header nav.middle2 form input{
+    border: 0px solid #000;
+	background-color: rgba(246, 246, 246, 1);
+	height: 30px;
+	padding-left: 39px;
+	padding-right: 10px;
+	border-radius: 5px;
+}
+header nav.right{
+	display: flex;
+}
+header nav.right a.img1{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin-right: 8px;
+    width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	background-color: rgba(246, 246, 246, 1);
+}
+header nav.right a.img2{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin-right: 8px;
+    width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	background-color: rgba(246, 246, 246, 1);
+}
+header nav.right a.img3{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+    width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	background-color: rgba(246, 246, 246, 1);
+}
+
+
+#banner {
+    background-image: url('../images/shop-hero-1-product-slide-1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 755px;
+	display: flex;
+}
+#banner div.left img{
+	margin-top: 350px;
+    margin-left: 26px;
+}
+#banner div.main{
+	margin-left: 165px;
+    margin-top: 194px;
+}
+#banner div.main h5.h51{
+	font-size: 38px;
+    margin-right: -50px;
+	color: white;
+	font-weight: 500;
+	font-family: "caustenregular";
+}
+#banner div.main h1{
+	font-size: 82px;
+	margin-top: 32px;
+	max-width: 570px;
+	color: white;
+	font-family: "Core Sans C 85";
+}
+#banner div.main h5.h52{
+	font-size: 38px;
+	margin-top: 30px;
+    color: white;
+    font-weight: 500;
+    font-family: "caustenregular";
+}
+#banner div.main button{
+	margin-top: 35px;
+}
+#banner div.main button a{
+	padding: 12px 74px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 18px;
+    font-family: 'caustenregular';
+    font-weight: 700;
+    color: #3C4242;
+}
+#banner div.middle{
+	justify-content: center;
+    position: absolute;
+    display: flex;
+    margin-top: 698px;
+    margin-left: 715px;
+}
+#banner div.middle div.one{
+	background-color: white;
+    height: 8px;
+    width: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#banner div.middle div.two{
+	background-color: rgba(255, 255, 255, 0.5);
+    height: 8px;
+    width: 50px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#banner div.right img{
+	position: absolute;
+    margin-left: 690px;
+    margin-top: 350px;
+}
+
+
+
+#deals{
+	padding: 98px 0 70px 0;
+}
+#deals section.wrapper ul li{
+	justify-content: space-between;
+    display: flex;
+}
+#deals section.wrapper ul li div.deals1{
+	background: url(../images/bg-2.jpg);
+    border-radius: 8px;
+    box-shadow: 6px 10px 20px rgba(0, 0, 0, 0.5);
+    background-size: 1125px 731px;
+    background-position: -116px 0px;
+    padding: 0 578px 0 0px;
+}
+#deals section.wrapper ul li div.deals2{
+	background: url(../images/bg-3.jpeg);
+    height: 355px;
+    border-radius: 8px;
+    box-shadow: 6px 10px 20px rgba(0, 0, 0, 0.5);
+    background-size: 980px 515px;
+    padding: 0 585px 0 0px;
+}
+#deals section.wrapper ul li div.deals1 span.d1{
+	position: absolute;
+    margin-top: 65px;
+    margin-left: 30px;
+}
+#deals section.wrapper ul li div.deals1 span.d1 h6{
+	color: white;
+	font-size: 18px;
+	font-family: "Montserrat";
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+#deals section.wrapper ul li div.deals1 span.d1 h2{
+	color: white;
+	font-size: 34px;
+	font-weight: 800;
+	font-family: "Core Sans C 55";
+}
+#deals section.wrapper ul li div.deals1 span.d1 h3{
+	color: white;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    margin-top: 18px;
+}
+#deals section.wrapper ul li div.deals1 span.d1 a h6.h6{
+    position: absolute;
+	color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    margin-top: 45px;
+    border-bottom: 1px solid #fff;
+}
+
+#deals section.wrapper ul li div.deals2 span.d2{
+	position: absolute;
+    margin-top: 65px;
+    margin-left: 30px;
+}
+#deals section.wrapper ul li div.deals2 span.d2 h6{
+	color: white;
+	font-size: 18px;
+	font-family: "Montserrat";
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+#deals section.wrapper ul li div.deals2 span.d2 h2{
+	color: white;
+	font-size: 34px;
+	max-width: 310px;
+	font-weight: 800;
+	font-family: "Core Sans C 55";
+}
+#deals section.wrapper ul li div.deals2 span.d2 h3{
+	color: white;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    margin-top: 18px;
+}
+#deals section.wrapper ul li div.deals2 span.d2 a h6:last-child{
+    position: absolute;
+	color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    margin-top: 36px;
+    border-bottom: 1px solid #fff;
+}
+
+
+#arrival{
+	padding: 20px 0 55px 0;
+}
+#arrival section.wrapper section.na{
+    display: flex;
+    align-items: center;
+}
+#arrival section.wrapper section.na div{
+    width: 6px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgba(138, 51, 253, 1);
+}
+#arrival section.wrapper section.na h4{
+    font-size: 34px;
+    font-weight: 600;
+    margin-left: 26px;
+    color: rgba(60, 66, 66, 1);
+}
+#arrival section.wrapper section.na1{
+    padding: 55px 0px 40px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+#arrival section.wrapper section.na1 a{
+    align-self: center;
+}
+#arrival section.wrapper section.na1 ul{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+#arrival section.wrapper section.na1 ul li{
+    margin-left: 24px;
+}
+#arrival section.wrapper section.na1 ul li h6{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "caustenregular";
+    color: rgba(60, 66, 66, 1);
+    margin-top: 20px;
+}
+
+
+#centre{
+	padding: 0px 0 70px 0;
+}
+#centre section.wrapper ul {
+    display: flex;
+}
+#centre section.wrapper ul li div.fassion1{
+	background: url(../images/bg-4.jpg);
+    background-position: 0px 0px;
+    padding: 179px 608px 0 0px;
+    background-size: cover;
+    height: 640px;
+    position: relative;
+}
+#centre section.wrapper ul li div.fassion2{
+	background: url(../images/bg-5.jpg);
+    background-position: -23px 0px;
+    padding: 640px 602px 0 0px;
+}
+
+#centre section.wrapper ul li div.fassion1 span.fass {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding-left: 75px;
+}
+
+#centre section.wrapper ul li div.fassion1 span.fass h1 {
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-family: "Core Sans C 95";
+}
+
+#centre section.wrapper ul li div.fassion1 span.fass h4 {
+    font-size: 22px;
+    font-weight: 300;
+    max-width: 431px;
+    margin-bottom: 40px;
+    color: rgb(187 179 184 / 86%);
+    font-family: "caustenmedium";
+}
+
+#centre section.wrapper ul li div.fassion1 span.fass button a{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 38px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+
+
+#men{
+	padding: 20px 0 0 0;
+}
+#men section.wrapper section.na{
+    display: flex;
+    align-items: center;
+}
+#men section.wrapper ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+#men section.wrapper section.cato ul li{
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+#men section.wrapper section.na div{
+    width: 6px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgba(138, 51, 253, 1);
+}
+#men section.wrapper section.na h4{
+    font-size: 34px;
+    font-weight: 600;
+    margin-left: 26px;
+    color: rgba(60, 66, 66, 1);
+}
+#men section.wrapper section.cato ul li a img.img27{
+    height: 393px;
+    width: 273px;
+    border-radius: 10px
+}
+#men section.wrapper section.cato ul li span{
+    display: flex;
+    padding: 12px 0 12px 0;
+}
+#men section.wrapper section.cato ul li span a{
+    margin-left: auto;
+    align-self: center;
+}
+#men section.wrapper section.cato ul li span div h6{
+    font-size: 17px;
+    font-weight: 700;
+    font-family: "caustenmedium";
+    color: rgba(42, 47, 47, 1);
+}
+#men section.wrapper section.cato ul li span div h6:last-child{
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 8px;
+    font-family: "caustenmedium";
+    color: rgba(127, 127, 127, 1);
+}
+
+
+
+
+#women{
+	padding: 52px 0 55px 0;
+}
+#women section.wrapper section.na{
+    display: flex;
+    align-items: center;
+}
+#women section.wrapper section.na div{
+    width: 6px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgba(138, 51, 253, 1);
+}
+#women section.wrapper section.na h4{
+    font-size: 34px;
+    font-weight: 600;
+    margin-left: 26px;
+    color: rgba(60, 66, 66, 1);
+}
+#women section.wrapper ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+#women section.wrapper section.cato ul li{
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+#women section.wrapper section.cato ul li span{
+    display: flex;
+    padding: 12px 0 12px 0;
+}
+#women section.wrapper section.cato ul li span a{
+    margin-left: auto;
+    align-self: center;
+}
+#women section.wrapper section.cato ul li span div h6{
+    font-size: 17px;
+    font-weight: 700;
+    font-family: "caustenmedium";
+    color: rgba(42, 47, 47, 1);
+}
+#women section.wrapper section.cato ul li span div h6:last-child{
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 8px;
+    font-family: "caustenmedium";
+    color: rgba(127, 127, 127, 1);
+}
+
+
+
+#brand{
+	padding: 0 0 55px 0;
+}
+#brand section.wrapper div.brands{
+	width: 1199px;
+    height: 357.17px;
+    border-radius: 12px;
+    background-color: rgba(60, 66, 66, 1);
+    justify-content: center;
+    display: grid;
+    align-items: center;
+}
+#brand section.wrapper div.brands div.top{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    text-align: center;
+}
+#brand section.wrapper div.brands div.top h3{
+    font-size: 50px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Core Sans C 55";
+}
+#brand section.wrapper div.brands div.top h5{
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 37px;
+    color: rgba(255, 255, 255, 1);
+    font-family: "caustenregular";
+}
+#brand section.wrapper div.brands div.top h5 span{
+    font-size: 22px;
+    font-weight: 700;
+    color: rgba(251, 209, 3, 1);
+    font-family: "caustenregular";
+}
+#brand section.wrapper div.brands div.bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+#brand section.wrapper div.brands div.bottom span.img1{
+    
+}
+#brand section.wrapper div.brands div.bottom span{
+    position: relative;
+    left: -5px;
+    display: flex;
+    margin-left: 12px;
+    align-items: center;
+    width: 132px;
+    height: 61px;
+    border-radius: 9px;
+    background: #fff;
+}
+#brand section.wrapper div.brands div.bottom span a img{
+    position: relative;
+    width: 92px;
+    left: 20px;
+}
+
+
+
+#lime{
+	padding: 35px 0 55px 0;
+}
+#lime section.wrapper section.na{
+    display: flex;
+    align-items: center;
+}
+#lime section.wrapper section.na div{
+    width: 6px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgba(138, 51, 253, 1);
+}
+#lime section.wrapper section.na h4{
+    font-size: 34px;
+    font-weight: 600;
+    margin-left: 26px;
+    color: rgba(60, 66, 66, 1);
+}
+#lime section.wrapper ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+#lime section.wrapper section.cato ul li{
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+#lime section.wrapper section.cato ul li a img.wtl{
+    position: absolute;
+    margin-left: -47px;
+    margin-top: 18px;
+    background-color: white;
+    padding: 7px;
+    border-radius: 15px;
+}
+#lime section.wrapper section.cato ul li span{
+    display: flex;
+    padding: 12px 0 12px 0;
+}
+#lime section.wrapper section.cato ul li span div.amnt{
+    margin-left: auto;
+    justify-content: center;
+    display: flex;
+    border-radius: 8px;
+    width: 65px;
+    height: 32px;
+    background-color: rgba(246, 246, 246, 1);
+}
+#lime section.wrapper section.cato ul li span  div.amnt h6{
+    position: relative;
+    font-size: 14px;
+    color: rgba(60, 66, 66, 1);
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-family: "caustenmedium";
+}
+#lime section.wrapper section.cato ul li span div.txt h6{
+    font-size: 17px;
+    font-weight: 700;
+    font-family: "caustenmedium";
+    color: rgba(42, 47, 47, 1);
+}
+#lime section.wrapper section.cato ul li span div.txt h6:last-child{
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 8px;
+    font-family: "caustenmedium";
+    color: rgba(127, 127, 127, 1);
+}
+
+
+
+
+#feedback{
+	padding: 0 0 55px 0;
+}
+#feedback section.wrapper section.na{
+    display: flex;
+    align-items: center;
+}
+#feedback section.wrapper section.na div{
+    width: 6px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgba(138, 51, 253, 1);
+}
+#feedback section.wrapper section.na h4{
+    font-size: 34px;
+    font-weight: 600;
+    margin-left: 26px;
+    color: rgba(60, 66, 66, 1);
+}
+#feedback section.wrapper .review{
+    display: flex;
+    margin-top: 55px;
+}
+#feedback section.wrapper .review .rev1{
+    border: 1px solid #8f8383;
+    border-radius: 12px;
+    padding: 23px;
+    height: 292px;
+    width: 781px;
+    margin-right: 19px;
+}
+#feedback section.wrapper .review .rev1 div div.images{
+    display: flex;
+    justify-content: space-between;
+}
+#feedback section.wrapper .review .rev2{
+    border: 1px solid #8f8383;
+    border-radius: 12px;
+    padding: 23px;
+    height: 292px;
+    width: 781px;
+    margin-right: 19px;
+}
+#feedback section.wrapper .review .rev2 div div.images{
+    display: flex;
+    justify-content: space-between;
+}
+#feedback section.wrapper .review .rev3{
+    border: 1px solid #8f8383;
+    border-radius: 12px;
+    padding: 23px;
+    height: 292px;
+    width: 781px;
+}
+#feedback section.wrapper .review .rev3 div div.images{
+    display: flex;
+    justify-content: space-between;
+}
+#feedback section.wrapper .review .rev1 div div.txts{
+    margin-top: 16px;
+}
+#feedback section.wrapper .review .rev1 div div.txts h3{
+    margin-bottom: 24px;
+    font-size: 23px;
+    font-weight: 500;
+    font-family: 'Core Sans C 55';
+    color: rgb(60 66 66);
+}
+#feedback section.wrapper .review .rev1 div div.txts p{
+    font-size: 13.5px;
+    color: rgb(127 127 127);
+    font-family: 'caustenmedium';
+}
+
+#feedback section.wrapper .review .rev2 div div.txts{
+    margin-top: 16px;
+}
+#feedback section.wrapper .review .rev2 div div.txts h3{
+    margin-bottom: 24px;
+    font-size: 23px;
+    font-weight: 500;
+    font-family: 'Core Sans C 55';
+    color: rgb(60 66 66);
+}
+#feedback section.wrapper .review .rev2 div div.txts p{
+    font-size: 13.5px;
+    color: rgb(127 127 127);
+    font-family: 'caustenmedium';
+}
+
+#feedback section.wrapper .review .rev3 div div.txts{
+    margin-top: 16px;
+}
+#feedback section.wrapper .review .rev3 div div.txts h3{
+    margin-bottom: 24px;
+    font-size: 23px;
+    font-weight: 500;
+    font-family: 'Core Sans C 55';
+    color: rgb(60 66 66);
+}
+#feedback section.wrapper .review .rev3 div div.txts p{
+    font-size: 13.5px;
+    color: rgb(127 127 127);
+    font-family: 'caustenmedium';
+}
+
+#feedback section.wrapper .rvsc{
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+#feedback section.wrapper .rvsc div.rvsc1{
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+#feedback section.wrapper .rvsc div{
+    width: 8px;
+    height: 8px;
+    background-color: #bdb9b9;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+
+
+
+footer{
+    background: rgba(60, 66, 66, 1);
+    padding: 76px 0 32px 0;
+}
+footer section.wrapper1 {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1040px;
+}
+footer section.top {
+	display: flex;
+	justify-content: space-between;
+}
+footer section.top div.item h4 {
+	font-size: 26px;
+    color: rgba(246, 246, 246, 1);
+	margin-bottom: 32px;
+    font-weight: 700;
+    font-family: 'caustenregular';
+}
+footer section.top div.item ul li {
+	margin-bottom: 12px;
+}
+footer section.top div.item ul li a {
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	font-weight: 600;
+}
+footer section.top div.item ul li a span{
+    font-size: 17px;
+    font-weight: 500;
+    font-family: "caustenregular";
+    color: rgba(246, 246, 246, 1);
+    margin-top: 6px;
+}
+
+footer section.middle div.item1{
+    display: flex;
+    justify-content: space-between;
+}
+footer section.middle div.item1 .social{
+    margin-top: 58px;
+}
+footer section.middle div.item1 .social ul{
+    display: flex;
+    margin-left: -12px;
+}
+footer section.middle div.item1 .social ul li{
+    margin-left: 12px;
+}
+footer section.middle div.item1 .social ul li a{
+    background-color: white;
+    width: 37px;
+    height: 37px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+}
+footer section.middle div.item1 .app h4{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "caustenregular";
+    color: rgba(246, 246, 246, 1);
+    margin-left: 18px;
+}
+footer section.middle div.item1 .app ul{
+    display: flex;
+    margin-top: 16px;
+    margin-right: -18px;
+}
+footer section.middle div.item1 .app ul li{
+    margin-left: 10px;
+    margin-right: 18px;
+}
+
+footer section.middle1 div.item2{
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 62px;
+    margin-top: 32px;
+    border-top: 1px solid rgba(190, 188, 189, 1);
+    border-bottom: 1px solid rgba(190, 188, 189, 1);
+}
+footer section.middle1 div.item2 h4{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "caustenregular";
+    color: rgba(246, 246, 246, 1);
+    margin-left: 18px;
+}
+
+footer section.bottom div.item3{
+    justify-content: center;
+    display: flex;
+    margin-top: 52px;
+}
+footer section.bottom div.item3 p{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "caustenregular";
+    color: rgba(190, 188, 189, 1);
+}
+
+
+
+
