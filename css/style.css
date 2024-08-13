@@ -401,15 +401,17 @@ header nav.middle2 form{
 }
 header nav.middle2 form img{
 	position: relative;
-	left: 30px;
+	left: 26px;
 }
 header nav.middle2 form input{
     border: 0px solid #000;
 	background-color: rgba(246, 246, 246, 1);
-	height: 30px;
-	padding-left: 39px;
-	padding-right: 10px;
+	height: 36px;
 	border-radius: 5px;
+    padding: 12px 20px 12px 32px;
+    font-size: 16px;
+    position: static;
+    align-self: center;
 }
 header nav.right{
 	display: flex;
@@ -419,8 +421,8 @@ header nav.right a.img1{
 	justify-content: center;
 	display: flex;
 	margin-right: 8px;
-    width: 30px;
-	height: 30px;
+    width: 36px;
+	height: 36px;
 	border-radius: 5px;
 	background-color: rgba(246, 246, 246, 1);
 }
@@ -429,8 +431,8 @@ header nav.right a.img2{
 	justify-content: center;
 	display: flex;
 	margin-right: 8px;
-    width: 30px;
-	height: 30px;
+    width: 36px;
+	height: 36px;
 	border-radius: 5px;
 	background-color: rgba(246, 246, 246, 1);
 }
@@ -438,8 +440,8 @@ header nav.right a.img3{
 	align-items: center;
 	justify-content: center;
 	display: flex;
-    width: 30px;
-	height: 30px;
+    width: 36px;
+	height: 36px;
 	border-radius: 5px;
 	background-color: rgba(246, 246, 246, 1);
 }
@@ -468,24 +470,24 @@ header nav.right a.img3{
 	font-family: "caustenregular";
 }
 #banner div.main h1{
-	font-size: 82px;
-	margin-top: 32px;
-	max-width: 570px;
+	font-size: 78px;
+	margin-top: 22px;
+	max-width: 506px;
 	color: white;
 	font-family: "Core Sans C 85";
 }
 #banner div.main h5.h52{
 	font-size: 38px;
-	margin-top: 30px;
+	margin-top: 22px;
     color: white;
     font-weight: 500;
     font-family: "caustenregular";
 }
 #banner div.main button{
-	margin-top: 35px;
+	margin-top: 56px;
 }
 #banner div.main button a{
-	padding: 12px 74px;
+	padding: 16px 72px 16px 72px;
     border-radius: 5px;
     background-color: white;
     font-size: 18px;
@@ -514,9 +516,9 @@ header nav.right a.img3{
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-#banner div.right img{
+#banner div.right{
 	position: absolute;
-    margin-left: 690px;
+    margin-left: 1476px;
     margin-top: 350px;
 }
 
@@ -532,7 +534,7 @@ header nav.right a.img3{
 #deals section.wrapper ul li div.deals1{
 	background: url(../images/bg-2.jpg);
     border-radius: 8px;
-    box-shadow: 6px 10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.4);
     background-size: 1125px 731px;
     background-position: -116px 0px;
     padding: 0 578px 0 0px;
@@ -541,7 +543,7 @@ header nav.right a.img3{
 	background: url(../images/bg-3.jpeg);
     height: 355px;
     border-radius: 8px;
-    box-shadow: 6px 10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.4);
     background-size: 980px 515px;
     padding: 0 585px 0 0px;
 }
@@ -647,10 +649,10 @@ header nav.right a.img3{
 #arrival section.wrapper section.na1 ul{
     display: flex;
     justify-content: space-between;
-    margin-right: 20px;
+    gap: 26px;
 }
 #arrival section.wrapper section.na1 ul li{
-    margin-left: 24px;
+    /* margin-left: 24px; */
 }
 #arrival section.wrapper section.na1 ul li h6{
     font-size: 20px;
@@ -697,11 +699,11 @@ header nav.right a.img3{
 }
 
 #centre section.wrapper ul li div.fassion1 span.fass h4 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 300;
     max-width: 431px;
     margin-bottom: 40px;
-    color: rgb(187 179 184 / 86%);
+    color: rgba(255, 255, 255, 1);
     font-family: "caustenmedium";
 }
 
@@ -870,19 +872,42 @@ header nav.right a.img3{
     justify-content: space-between;
     margin-top: -20px;
 }
-#brand section.wrapper div.brands div.bottom span.img1{
-    
-}
 #brand section.wrapper div.brands div.bottom span{
     position: relative;
     left: -5px;
     display: flex;
     margin-left: 12px;
     align-items: center;
-    width: 132px;
-    height: 61px;
+    width: 177px;
+    height: 80px;
     border-radius: 9px;
     background: #fff;
+    
+}
+#brand section.wrapper div.brands div.bottom span.img1 a img{
+    position: relative;
+    width: 149px;
+    left: 16px;
+}
+#brand section.wrapper div.brands div.bottom span.img2 a img{
+    position: relative;
+    width: 121px;
+    left: 32px;
+}
+#brand section.wrapper div.brands div.bottom span.img3 a img{
+    position: relative;
+    width: 111px;
+    left: 36px;
+}
+#brand section.wrapper div.brands div.bottom span.img4 a img{
+    position: relative;
+    width: 148px;
+    left: 16px;
+}
+#brand section.wrapper div.brands div.bottom span.img5 a img{
+    position: relative;
+    width: 112px;
+    left: 36px;
 }
 #brand section.wrapper div.brands div.bottom span a img{
     position: relative;
@@ -914,12 +939,14 @@ header nav.right a.img3{
 #lime section.wrapper ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-top: 55px;
+    gap: 24px;
 }
 #lime section.wrapper section.cato ul li{
     justify-content: space-between;
     margin-bottom: 22px;
+    gap: 16px;
+    display: grid;
 }
 #lime section.wrapper section.cato ul li a img.wtl{
     position: absolute;
@@ -931,7 +958,6 @@ header nav.right a.img3{
 }
 #lime section.wrapper section.cato ul li span{
     display: flex;
-    padding: 12px 0 12px 0;
 }
 #lime section.wrapper section.cato ul li span div.amnt{
     margin-left: auto;
@@ -992,7 +1018,8 @@ header nav.right a.img3{
     margin-top: 55px;
 }
 #feedback section.wrapper .review .rev1{
-    border: 1px solid #8f8383;
+    border: 1.8px solid;
+    border-color: rgba(190, 188, 189, 1);
     border-radius: 12px;
     padding: 23px;
     height: 292px;
@@ -1004,7 +1031,8 @@ header nav.right a.img3{
     justify-content: space-between;
 }
 #feedback section.wrapper .review .rev2{
-    border: 1px solid #8f8383;
+    border: 1.8px solid;
+    border-color: rgba(190, 188, 189, 1);
     border-radius: 12px;
     padding: 23px;
     height: 292px;
@@ -1016,7 +1044,8 @@ header nav.right a.img3{
     justify-content: space-between;
 }
 #feedback section.wrapper .review .rev3{
-    border: 1px solid #8f8383;
+    border: 1.8px solid;
+    border-color: rgba(190, 188, 189, 1);
     border-radius: 12px;
     padding: 23px;
     height: 292px;
@@ -1199,7 +1228,7 @@ footer section.bottom div.item3 p{
     font-size: 18px;
     font-weight: 700;
     font-family: "caustenregular";
-    color: rgba(190, 188, 189, 1);
+    color: rgba(255, 255, 255, 1);
 }
 
 
