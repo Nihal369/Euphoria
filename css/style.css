@@ -370,7 +370,7 @@ header{
 	justify-content: space-between;
 	align-items: center;
 }
-header h1.left img{
+header h1.header_h1 img{
 	margin-left: 39px;
 }
 header nav.middle1 ul{
