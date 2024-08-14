@@ -1234,3 +1234,133 @@ footer section.bottom div.item3 p{
 
 
 
+/* RESPONSIVE */
+
+@media screen and (max-width: 1400px) {
+    header nav.right{
+        margin-right: -58px;
+    }
+    #banner{
+        width: 1500px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+    }
+    #deals .wrapper{
+        width: 1086px;
+    }
+    #deals .wrapper ul li{
+        gap: 28px;
+    }
+
+    #arrival .wrapper{
+        width: 1086px;
+    }
+    #arrival .wrapper .na1 a.na1{
+        margin-right: 14px;
+    }
+    #arrival .wrapper .na1 a.na2{
+        margin-left: 14px;
+    }
+
+    #centre .wrapper{
+        width: 1086px;
+    }
+
+    #men .wrapper{
+        width: 1200px;
+        margin-left: 156px;
+    }
+
+    #women .wrapper{
+        width: 1200px;
+        margin-left: 156px;
+    }
+
+    #brand .wrapper{
+        width: 1086px;
+    }
+
+    #lime .wrapper{
+        width: 1200px;
+        margin-left: 156px;
+    }
+
+    #feedback .wrapper{
+        width: 1200px;
+        margin-left: 156px;
+    }
+
+    footer{
+        width: 1500px;
+    }
+    footer .wrapper{
+        width: 1200px;
+        margin-left: 156px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header nav.right{
+        margin-right: -482px;
+    }
+    #banner{
+        width: 1500px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+    }
+    #deals .wrapper{
+        width: 712px;
+    }
+    #deals .wrapper ul li{
+        gap: 28px;
+    }
+
+    #arrival .wrapper{
+        width: 712px;
+    }
+    #arrival .wrapper .na1 a.na1{
+        margin-right: 18px;
+    }
+    #arrival .wrapper .na1 a.na2{
+        margin-left: 18px;
+    }
+
+    #centre .wrapper{
+        width: 712px;
+    }
+
+    #men .wrapper{
+        width: 1200px;
+        margin-left: 156px;
+    }
+
+    #women .wrapper{
+        width: 1200px;
+        margin-left: 156px;
+    }
+
+    #brand .wrapper{
+        width: 712px;
+    }
+
+    #lime .wrapper{
+        width: 1200px;
+        margin-left: 156px;
+    }
+
+    #feedback .wrapper{
+        width: 1200px;
+        margin-left: 156px;
+    }
+
+    footer{
+        width: 1500px;
+    }
+    footer .wrapper{
+        width: 1200px;
+        margin-left: 156px;
+    }
+}
+
