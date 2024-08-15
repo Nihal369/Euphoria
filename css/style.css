@@ -454,7 +454,7 @@ header nav.right a.img3{
     height: 755px;
 	display: flex;
 }
-#banner div.left img{
+#banner div.banner_left img{
 	margin-top: 350px;
     margin-left: 26px;
 }
@@ -619,42 +619,42 @@ header nav.right a.img3{
 }
 
 
-#arrival{
+#new_arrival{
 	padding: 20px 0 55px 0;
 }
-#arrival section.wrapper section.na{
+#new_arrival section.wrapper section.na{
     display: flex;
     align-items: center;
 }
-#arrival section.wrapper section.na div{
+#new_arrival section.wrapper section.na div{
     width: 6px;
     height: 30px;
     border-radius: 10px;
     background-color: rgba(138, 51, 253, 1);
 }
-#arrival section.wrapper section.na h4{
+#new_arrival section.wrapper section.na h4{
     font-size: 34px;
     font-weight: 600;
     margin-left: 26px;
     color: rgba(60, 66, 66, 1);
 }
-#arrival section.wrapper section.na1{
+#new_arrival section.wrapper section.na1{
     padding: 55px 0px 40px 0px;
     display: flex;
     justify-content: space-between;
 }
-#arrival section.wrapper section.na1 a{
+#new_arrival section.wrapper section.na1 a{
     align-self: center;
 }
-#arrival section.wrapper section.na1 ul{
+#new_arrival section.wrapper section.na1 ul{
     display: flex;
     justify-content: space-between;
     gap: 26px;
 }
-#arrival section.wrapper section.na1 ul li{
+#new_arrival section.wrapper section.na1 ul li{
     /* margin-left: 24px; */
 }
-#arrival section.wrapper section.na1 ul li h6{
+#new_arrival section.wrapper section.na1 ul li h6{
     font-size: 20px;
     font-weight: 700;
     font-family: "caustenregular";
@@ -1241,11 +1241,15 @@ footer section.bottom div.item3 p{
         margin-right: -58px;
     }
     #banner{
-        width: 1500px;
+        width: 1512px;
         background-size: cover;
         background-position: center;
         display: flex;
     }
+    #banner .right{
+        margin-left: 1462;
+    }
+
     #deals .wrapper{
         width: 1086px;
     }
@@ -1253,13 +1257,13 @@ footer section.bottom div.item3 p{
         gap: 28px;
     }
 
-    #arrival .wrapper{
+    #new_arrival .wrapper{
         width: 1086px;
     }
-    #arrival .wrapper .na1 a.na1{
+    #new_arrival .wrapper .na1 a.na1{
         margin-right: 14px;
     }
-    #arrival .wrapper .na1 a.na2{
+    #new_arrival .wrapper .na1 a.na2{
         margin-left: 14px;
     }
 
@@ -1292,7 +1296,7 @@ footer section.bottom div.item3 p{
     }
 
     footer{
-        width: 1500px;
+        width: 1512px;
     }
     footer .wrapper{
         width: 1200px;
@@ -1305,7 +1309,7 @@ footer section.bottom div.item3 p{
         margin-right: -482px;
     }
     #banner{
-        width: 1500px;
+        width: 1512px;
         background-size: cover;
         background-position: center;
         display: flex;
@@ -1317,13 +1321,13 @@ footer section.bottom div.item3 p{
         gap: 28px;
     }
 
-    #arrival .wrapper{
+    #new_arrival .wrapper{
         width: 712px;
     }
-    #arrival .wrapper .na1 a.na1{
+    #new_arrival .wrapper .na1 a.na1{
         margin-right: 18px;
     }
-    #arrival .wrapper .na1 a.na2{
+    #new_arrival .wrapper .na1 a.na2{
         margin-left: 18px;
     }
 
@@ -1356,11 +1360,157 @@ footer section.bottom div.item3 p{
     }
 
     footer{
-        width: 1500px;
+        width: 1512px;
     }
     footer .wrapper{
         width: 1200px;
         margin-left: 156px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header nav.right{
+        margin-right: -746px;
+    }
+    #banner{
+        width: 1512px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+    }
+
+    #deals .wrapper{
+        width: 428px;
+    }
+    #deals .wrapper ul li{
+        gap: 48px;
+    }
+    #deals .wrapper ul li .deals2 .d2 h6{
+        white-space: nowrap;
+    }
+    #deals .wrapper ul li .deals2 .d2 h2{
+        width: 300px;
+    }
+
+    #new_arrival .wrapper{
+        width: 436px;
+    }
+    #new_arrival .wrapper .na1 a.na1{
+        margin-right: 18px;
+    }
+    #new_arrival .wrapper .na1 a.na2{
+        margin-left: 18px;
+    }
+
+    #centre .wrapper{
+        width: 436px;
+    }
+
+    #men .wrapper{
+        margin-left: 166px;
+    }
+
+    #women .wrapper{
+        margin-left: 166px;
+    }
+
+    #brand .wrapper{
+        width: 436px;
+    }
+
+    #lime .wrapper{
+        margin-left: 166px;
+    }
+
+    #feedback .wrapper{
+        margin-left: 166px;
+    }
+
+    footer .wrapper{
+        margin-left: 166px;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    header nav.right{
+        margin-right: -1000px;
+    }
+    #banner{
+        width: 1512px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+    }
+    #deals .wrapper{
+        width: 192px;
+    }
+
+    #new_arrival .wrapper{
+        width: 192px;
+    }
+    #new_arrival section.wrapper section.na h4{
+        white-space: nowrap;
+        width: 126px;
+    }
+
+    #centre .wrapper{
+        width: 192px;
+    }
+
+    #brand .wrapper{
+        width: 192px;
+    }
+}
+
+
+@media screen and (max-width: 320px){
+    header nav.right{
+        margin-right: -946px;
+    }
+
+    #banner .middle{
+        position: absolute;
+        margin-left: 592px;
+    }
+    #banner .right{
+        margin-left: 1226px;
+    }
+
+    #deals .wrapper{
+        width: 250px;
+    }
+
+    #new_arrival .wrapper{
+        width: 250px;
+    }
+
+    #centre .wrapper{
+        width: 250px;
+    }
+
+    #men .wrapper{
+        margin-left: 38px;
+    }
+
+    #women .wrapper{
+        margin-left: 38px;
+    }
+
+    #brand .wrapper{
+        width: 250px;
+    }
+
+    #lime .wrapper{
+        margin-left: 38px;
+    }
+
+    #feedback .wrapper{
+        margin-left: 38px;
+    }
+
+    footer .wrapper{
+        margin-left: 38px;
     }
 }
 
