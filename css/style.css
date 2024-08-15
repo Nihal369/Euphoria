@@ -718,55 +718,55 @@ header nav.right a.img3{
 
 
 
-#men{
+#catogories_for_men{
 	padding: 20px 0 0 0;
 }
-#men section.wrapper section.na{
+#catogories_for_men section.wrapper section.na{
     display: flex;
     align-items: center;
 }
-#men section.wrapper ul {
+#catogories_for_men section.wrapper ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 55px;
 }
-#men section.wrapper section.cato ul li{
+#catogories_for_men section.wrapper section.cato ul li{
     justify-content: space-between;
     margin-bottom: 22px;
 }
-#men section.wrapper section.na div{
+#catogories_for_men section.wrapper section.na div{
     width: 6px;
     height: 30px;
     border-radius: 10px;
     background-color: rgba(138, 51, 253, 1);
 }
-#men section.wrapper section.na h4{
+#catogories_for_men section.wrapper section.na h4{
     font-size: 34px;
     font-weight: 600;
     margin-left: 26px;
     color: rgba(60, 66, 66, 1);
 }
-#men section.wrapper section.cato ul li a img.img27{
+#catogories_for_men section.wrapper section.cato ul li a img.img27{
     height: 393px;
     width: 273px;
     border-radius: 10px
 }
-#men section.wrapper section.cato ul li span{
+#catogories_for_men section.wrapper section.cato ul li span{
     display: flex;
     padding: 12px 0 12px 0;
 }
-#men section.wrapper section.cato ul li span a{
+#catogories_for_men section.wrapper section.cato ul li span a{
     margin-left: auto;
     align-self: center;
 }
-#men section.wrapper section.cato ul li span div h6{
+#catogories_for_men section.wrapper section.cato ul li span div h6{
     font-size: 17px;
     font-weight: 700;
     font-family: "caustenmedium";
     color: rgba(42, 47, 47, 1);
 }
-#men section.wrapper section.cato ul li span div h6:last-child{
+#catogories_for_men section.wrapper section.cato ul li span div h6:last-child{
     font-size: 13px;
     font-weight: 500;
     margin-top: 8px;
@@ -777,50 +777,50 @@ header nav.right a.img3{
 
 
 
-#women{
+#catogories_for_women{
 	padding: 52px 0 55px 0;
 }
-#women section.wrapper section.na{
+#catogories_for_women section.wrapper section.na{
     display: flex;
     align-items: center;
 }
-#women section.wrapper section.na div{
+#catogories_for_women section.wrapper section.na div{
     width: 6px;
     height: 30px;
     border-radius: 10px;
     background-color: rgba(138, 51, 253, 1);
 }
-#women section.wrapper section.na h4{
+#catogories_for_women section.wrapper section.na h4{
     font-size: 34px;
     font-weight: 600;
     margin-left: 26px;
     color: rgba(60, 66, 66, 1);
 }
-#women section.wrapper ul {
+#catogories_for_women section.wrapper ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 55px;
 }
-#women section.wrapper section.cato ul li{
+#catogories_for_women section.wrapper section.cato ul li{
     justify-content: space-between;
     margin-bottom: 22px;
 }
-#women section.wrapper section.cato ul li span{
+#catogories_for_women section.wrapper section.cato ul li span{
     display: flex;
     padding: 12px 0 12px 0;
 }
-#women section.wrapper section.cato ul li span a{
+#catogories_for_women section.wrapper section.cato ul li span a{
     margin-left: auto;
     align-self: center;
 }
-#women section.wrapper section.cato ul li span div h6{
+#catogories_for_women section.wrapper section.cato ul li span div h6{
     font-size: 17px;
     font-weight: 700;
     font-family: "caustenmedium";
     color: rgba(42, 47, 47, 1);
 }
-#women section.wrapper section.cato ul li span div h6:last-child{
+#catogories_for_women section.wrapper section.cato ul li span div h6:last-child{
     font-size: 13px;
     font-weight: 500;
     margin-top: 8px;
@@ -1271,12 +1271,12 @@ footer section.bottom div.item3 p{
         width: 1086px;
     }
 
-    #men .wrapper{
+    #catogories_for_men .wrapper{
         width: 1200px;
         margin-left: 156px;
     }
 
-    #women .wrapper{
+    #catogories_for_women .wrapper{
         width: 1200px;
         margin-left: 156px;
     }
@@ -1335,12 +1335,12 @@ footer section.bottom div.item3 p{
         width: 712px;
     }
 
-    #men .wrapper{
+    #catogories_for_men .wrapper{
         width: 1200px;
         margin-left: 156px;
     }
 
-    #women .wrapper{
+    #catogories_for_women .wrapper{
         width: 1200px;
         margin-left: 156px;
     }
@@ -1406,11 +1406,11 @@ footer section.bottom div.item3 p{
         width: 436px;
     }
 
-    #men .wrapper{
+    #catogories_for_men .wrapper{
         margin-left: 166px;
     }
 
-    #women .wrapper{
+    #catogories_for_women .wrapper{
         margin-left: 166px;
     }
 
@@ -1489,11 +1489,11 @@ footer section.bottom div.item3 p{
         width: 250px;
     }
 
-    #men .wrapper{
+    #catogories_for_men .wrapper{
         margin-left: 38px;
     }
 
-    #women .wrapper{
+    #catogories_for_women .wrapper{
         margin-left: 38px;
     }
 
