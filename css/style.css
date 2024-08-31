@@ -366,12 +366,12 @@ br.clear {
 
 header{
 	display: flex;
-	padding: 26px 80px;
+	padding: 26px;
 	justify-content: space-between;
 	align-items: center;
 }
 header h1.header_h1 img{
-	margin-left: 39px;
+	margin-left: -26px;
 }
 header nav.middle1 ul{
 	margin-left: 0px;
@@ -440,6 +440,7 @@ header nav.right a.img3{
 	align-items: center;
 	justify-content: center;
 	display: flex;
+    margin-right: -26px;
     width: 36px;
 	height: 36px;
 	border-radius: 5px;
@@ -871,6 +872,7 @@ header nav.right a.img3{
     display: flex;
     justify-content: space-between;
     margin-top: -20px;
+    gap: 6px;
 }
 #brand section.wrapper div.brands div.bottom span{
     position: relative;
@@ -1237,8 +1239,14 @@ footer section.bottom div.item3 p{
 /* RESPONSIVE */
 
 @media screen and (max-width: 1400px) {
+    header h1 {
+        margin-left: 56px;
+    }
     header nav.right{
         margin-right: -58px;
+    }
+    header nav.right a.img3{
+        margin-right: -42px;
     }
     #banner{
         width: 1512px;
@@ -1254,7 +1262,7 @@ footer section.bottom div.item3 p{
         width: 1086px;
     }
     #deals .wrapper ul li{
-        gap: 28px;
+        gap: 52px;
     }
 
     #new_arrival .wrapper{
