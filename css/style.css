@@ -446,6 +446,15 @@ header nav.right a.img3{
 	border-radius: 5px;
 	background-color: rgba(246, 246, 246, 1);
 }
+header .menubar{
+    margin-left: -65px;
+}
+header input.checking{
+    display: none;
+}
+div.menu-icon{
+    display: none;
+}
 
 
 #banner {
@@ -767,7 +776,7 @@ header nav.right a.img3{
     font-family: "caustenmedium";
     color: rgba(42, 47, 47, 1);
 }
-#catogories_for_men section.wrapper section.cato ul li span div h6:last-child{
+#catogories_for_men section.wrapper section.cato ul li span div a h6{
     font-size: 13px;
     font-weight: 500;
     margin-top: 8px;
@@ -821,7 +830,7 @@ header nav.right a.img3{
     font-family: "caustenmedium";
     color: rgba(42, 47, 47, 1);
 }
-#catogories_for_women section.wrapper section.cato ul li span div h6:last-child{
+#catogories_for_women section.wrapper section.cato ul li span div a h6{
     font-size: 13px;
     font-weight: 500;
     margin-top: 8px;
@@ -1187,7 +1196,45 @@ footer section.middle div.item1 .social ul li a{
     justify-content: center;
     display: flex;
     border-radius: 10px;
+    transition: background-color 0.5s ease;
 }
+
+footer section.middle div.item1 .social ul li a img.fb{
+    
+    filter: grayscale(100%);
+    transition: filter 0.5s ease, background-color 0.5s ease;
+}
+footer section.middle div.item1 .social ul li a.fb:hover img.fb1{
+    filter:  invert(41%) sepia(93%) saturate(4316%) hue-rotate(204deg);
+}
+
+footer section.middle div.item1 .social ul li a img.insta1{
+    
+    filter: grayscale(100%);
+    transition: filter 0.2s ease, background-color 0.2s ease;
+}
+footer section.middle div.item1 .social ul li a.insta:hover img.insta1{
+    filter: invert(64%) sepia(12%) hue-rotate(341deg) saturate(5357%);
+}
+
+footer section.middle div.item1 .social ul li a img.tweet1{
+    
+    filter: grayscale(100%);
+    transition: filter 0.2s ease, background-color 0.2s ease;
+}
+footer section.middle div.item1 .social ul li a.tweet:hover img.tweet1{
+    filter: invert(57%) sepia(60%) saturate(3719%) hue-rotate(176deg);
+}
+
+footer section.middle div.item1 .social ul li a img.link1{
+    
+    filter: grayscale(100%);
+    transition: filter 0.2s ease, background-color 0.2s ease;
+}
+footer section.middle div.item1 .social ul li a.link:hover img.link1{
+    filter: invert(29%) sepia(76%) saturate(1081%) hue-rotate(169deg);
+}
+
 footer section.middle div.item1 .app h4{
     font-size: 28px;
     font-weight: 700;
@@ -1568,9 +1615,40 @@ footer section.bottom div.item3 p{
         margin-left: 126px;
     }
     header nav.right{
-        margin-right: -886px;
+        margin-right: -710px;
     }
-    
+    header nav.middle1 ul.nav-links{
+        display: none;
+        position: absolute;
+        top: 100px;
+        right: -1000px;
+        gap: 28px;
+        background: rgb(250 246 246 / 75%);
+        height: calc(67vh - 160px);
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 9px;
+        transition: right 0.5s linear;
+    }
+    header nav.middle1 ul.nav-links.active{
+        display: flex;
+    }
+    header nav.middle2 form input{
+        width: 340px;
+        padding: 12px 20px 12px 42px;
+    }
+    header .menu-icon{
+        display: block;
+        width: 0px;
+        left: 922px;
+        position: relative;
+    }
+    header .menu-icon i{
+        font-size: 22px;
+    }
+
     #banner{
         width: 1512px;
         background-size: cover;
@@ -1608,6 +1686,20 @@ footer section.bottom div.item3 p{
     header nav.right{
         margin-right: -946px;
     }
+    header nav.middle1 ul.nav-links{
+        right: -1034px;
+    }
+    header nav.middle2 form{
+        left: -116px;
+        position: relative;
+    }
+    header nav.right{
+        left: -84px;
+        position: relative;
+    }
+    header .menu-icon{
+        left: 966px;
+    }
     #deals .wrapper{
         width: 122px;
     }
@@ -1632,8 +1724,18 @@ footer section.bottom div.item3 p{
     header h1{
         margin-left: 16px;
     }
+    header nav.middle1 ul.nav-links{
+        right: -958px;
+    }
+    header nav.middle2 form{
+        left: -124px;
+    }
     header nav.right{
         margin-right: -926px;
+        left: -152px;
+    }
+    header .menu-icon{
+        left: 946px
     }
 
     #banner .middle{
